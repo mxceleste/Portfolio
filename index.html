@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Profesional</title>
+    <!-- Conexión con el archivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN FIJO -->
+    <header class="main-header">
+        <div class="logo"> MI PORTFOLIO</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#portfolio">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: INICIO (PÁGINA PRINCIPAL) -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <span class="subtitle">Bienvenido a mi mundo digital!</span>
+                <h1>HOLA, SOY CELESTE</h1>
+                <p class="hero-text">Diseñadora Gráfica y Desarrolladora Web </p>
+                <a href="#portfolio" class="btn btn-primary">Ver mis trabajos</a>
+            </div>
+            <div class="hero-image">
+                <!-- Imagen principal -->
+                <img src="fotooportfolio.jpg" alt="Retrato profesional">
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: SOBRE MÍ -->
+        <section id="sobre-mi" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-grid">
+                    <article class="about-text">
+                        <p>Soy Celeste, tengo 20 años y soy estudiante de Diseño Interactivo. Me especializo en crear
+                            experiencias digitales funcionales, intuitivas y visualmente cuidadas. Mi formación combina
+                            diseño, creatividad y tecnología, lo que me permite abordar cada proyecto desde una
+                            perspectiva equilibrada entre estética y usabilidad.</p>
+
+                        <p>La lectura y el arte son dos pilares que influyen de manera constante en mi proceso
+                            creativo. Ambos me ayudan a generar ideas, explorar nuevas perspectivas y mantener una
+                            visión amplia dentro del mundo del diseño.</p>
+
+                        <p>Actualmente continúo desarrollando mis habilidades y conocimiento con el objetivo de
+                            construir soluciones digitales que aporten valor y generen impacto.</p>
+
+                        <!-- CITA INSPIRADORA -->
+                        <div class="quote-box">
+                            <blockquote>
+                                «The life of a designer is a life of fight: fight against the ugliness.»
+                            </blockquote>
+                            <cite>—Massimo Vignelli</cite>
+                        </div>
+
+                        <h3>Mis Habilidades</h3>
+                        <ul class="skills-list">
+                            <li>HTML Semántico y CSS</li>
+                            <li>Diseño y Edición</li>
+                            <li>Ilustración</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO (IMAGEN Y VIDEO) -->
+        <section id="portfolio" class="portfolio-section"></section>
+        <div class="container">
+            <h2 class="section-title">Algunos de mis proyectos</h2>
+        </div>
+
+        <div class="projects-grid"></div>
+        <article class="project-card">
+            <div class="card-image">
+                <img src="tarjetadecomunion.jpg" alt="Tarjeta de comunión">
+            </div>
+            <div class="card-info">
+                <h3>Tarjeta de comunión</h3>
+                <p>Ilustración realizada desde tableta gráfica.</p>
+            </div>
+        </article>
+
+
+        <div class="projects-grid"></div>
+        <article class="project-card">
+            <div class="card-image">
+                <img src="discovinilo.jpg" alt="Tarjeta de comunión">
+            </div>
+            <div class="card-info">
+                <h3>Portada disco de vinilo</h3>
+                <p>Diseño realizado desde Adobe Illustator</p>
+            </div>
+        </article>
+
+        <!-- VIDEO-->
+        <article class="project-card">
+            <div class="card-image video-container">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/NEP2kK8jx4w" title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <h3>¿Pueden los diseñadores gráficos sobrevivir en un mundo con IA avanzada?</h3>
+        </article>
+
+        <!--CONTACTO -->
+        <section id="contacto" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Hablemos</h2>
+                <div class="contact-wrapper">
+
+                    <!-- DATOS DE CONTACTO -->
+                    <div class="contact-info">
+                        <h3>Información de Contacto</h3>
+                        <p>¿Tienes un proyecto en mente? ¡Me encantaría escucharlo!</p>
+
+                        <div class="info-item">
+                            <span class="icon">📧</span>
+                            <a href="celestelopeztaco@gmail.com">celestelopeztabaco@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📱</span>
+                            <a href="tel:+346 00 12 34 ">+346001234</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <span>Sevilla, España</span>
+                        </div>
+                    </div>
+
+                    <!-- FORMULARIO VISUAL -->
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" rows="5" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Celeste - Portfolio Profesional.</p>
+    </footer>
+
+</body>
+
+</html>
